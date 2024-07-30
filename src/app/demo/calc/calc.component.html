@@ -1,0 +1,13 @@
+<h2>My calc</h2>
+<div>
+  <input [(ngModel)]="operation.operand1" type="number" placeholder="a">
+  <select  [(ngModel)]="operation.operator">
+    <option [value]="'+'">+</option>
+    <option [value]="'-'">-</option>
+    <option [value]="'*'">*</option>
+    <option [value]="'/'">/</option>
+  </select>
+  <input [(ngModel)]="operation.operand2" type="number" placeholder="b">
+  <button (click)="calculate()">=</button>
+  {{ result }}
+</div>
